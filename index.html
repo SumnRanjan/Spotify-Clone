@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <link class="" rel="shortcut icon" href="/logo.svg" type="image/x-icon" />
+    <title>Spotify</title>
+  </head>
+  <body class="overflow-x-hidden">
+    <div class="flex bg-black">
+      <div class="left w-[25vw] border-none p-[10px] text-white">
+        <div class="home bg-[#121212] rounded-lg m-1 p-[10px] w-full">
+          <div class="logo"><img class="invert" src="/logo.svg" alt="" /></div>
+          <ul class="w-[17px]">
+            <li><img class="invert" src="/home.svg" alt="Home" />Home</li>
+            <li><img class="invert" src="/search.svg" alt="Search" />Search</li>
+          </ul>
+        </div>
+        <div
+          class="library relative bg-[#121212] rounded-lg m-1 pl-4 pr-4 text-[18px] items-center pt-6 font-bold min-h-[83.5vh] w-full"
+        >
+          <div class="flex gap-4 w-full">
+            <img class="invert w-8" src="/playlist.svg" alt="" />
+            <h2>Your library</h2>
+          </div>
+
+          <div
+            class="footer[13px] flex text-[12px] gap-3 absolute bottom-0 w-full"
+          >
+            <div>
+              <a class="text-gray-500" href="https://www.spotify.com/jp/legal/"
+                ><span>Legal</span></a
+              >
+            </div>
+            <div>
+              <a
+                class="text-gray-500"
+                href="https://www.spotify.com/jp/privacy/"
+                ><span>Privacy Center</span></a
+              >
+            </div>
+            <div>
+              <a
+                class="text-gray-500"
+                href="https://www.spotify.com/jp/legal/privacy-policy/"
+                ><span>Privacy Policy</span></a
+              >
+            </div>
+            <div>
+              <a
+                class="text-gray-500"
+                href="https://www.spotify.com/jp/legal/cookies-policy/"
+                ><span>Cookies</span></a
+              >
+            </div>
+            <div>
+              <a
+                class="text-gray-500"
+                href="https://www.spotify.com/jp/legal/privacy-policy/#s3"
+                ><span>About Ads</span></a
+              >
+            </div>
+            <div>
+              <a
+                class="text-gray-500"
+                href="https://www.spotify.com/jp/accessibility/"
+                ><span>Accessibility</span></a
+              >
+            </div>
+          </div>
+        </div>
+      </div>
+      <div
+        class="right w-[75vw] bg-[#121212] mt-4 mb-[13px] rounded-lg text-white relative"
+      >
+        <div
+          class="header flex justify-between items-center bg-[#222222] h-[76px]"
+        >
+          <div class="nav flex">
+            <img
+              width="40"
+              class="invert hamburger"
+              src="img/hamburger.svg"
+              alt=""
+            />
+            <svg
+              width="24"
+              height="24"
+              viewBox="0 0 24 24"
+              fill="none"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                d="M15 6L9.70711 11.2929C9.37377 11.6262 9.20711 11.7929 9.20711 12C9.20711 12.2071 9.37377 12.3738 9.70711 12.7071L15 18"
+                stroke="#ffffff"
+                stroke-width="1.5"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+              />
+            </svg>
+            <svg
+              width="24"
+              height="24"
+              viewBox="0 0 24 24"
+              fill="none"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                d="M9 18L14.2929 12.7071C14.6262 12.3738 14.7929 12.2071 14.7929 12C14.7929 11.7929 14.6262 11.6262 14.2929 11.2929L9 6"
+                stroke="#ffffff"
+                stroke-width="1.5"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+              />
+            </svg>
+          </div>
+
+          <div class="button">
+            <button
+              class="btn font-bold bg-[#222222] hover:text-[17px] hover:text-gray-100 ml-4 mr-4 w-[82px] text-[#9C9494] cursor-pointer p-2"
+            >
+              Sign up
+            </button>
+            <button
+              class="bg-white w-[82px] text-black font-semibold rounded-[22px] p-2 ml-2 mr-2 hover:font-bold hover:text-[17px]"
+            >
+              Log in
+            </button>
+          </div>
+        </div>
+
+        <div class="spotifyPlaylist p-4 max-h-[80vh]">
+          <h1 class="font-bold text-xl">Spotify Playlists</h1>
+          <div class="container flex gap-4 flex-wrap m-[30px]">
+            <div class="card w-[250px] *:pt-3 p-3 bg-[#252525] relative">
+              <div
+                class="h-12 w-12 bg-[#1fdf64] rounded-full border-2 border-none p-3 flex items-center justify-center absolute bottom-[120px] right-5 opacity-0"
+              >
+                <svg
+                  width="24"
+                  height="24"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  xmlns="http:// www.w3.org/2000/svg"
+                >
+                  <path
+                    d="M5 20V4L19 12L5 20Z"
+                    stroke="#141834"
+                    stroke-width="1.5"
+                    stroke-linejoin="round"
+                    fill="#000"
+                  />
+                </svg>
+              </div>
+              <img
+                class="w-full object-contain"
+                src="https://raw.githubusercontent.com/CodeWithHarry/Sigma-Web-Dev-Course/main/Video%2084%20-%20Project%202%20-%20Spotify%20Clone/songs/cs/cover.jpg"
+                alt=""
+              />
+              <h2>Happy Hits!</h2>
+              <p>Hits to boost your mood and fill you with happiness!</p>
+            </div>
+            <div class="card w-[250px] *:pt-3 p-3 bg-[#252525] relative">
+              <div
+                class="h-12 w-12 bg-[#1fdf64] rounded-full border-2 border-none p-3 flex items-center justify-center absolute bottom-[120px] right-5 opacity-0"
+              >
+                <svg
+                  width="24"
+                  height="24"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  xmlns="http:// www.w3.org/2000/svg"
+                >
+                  <path
+                    d="M5 20V4L19 12L5 20Z"
+                    stroke="#141834"
+                    stroke-width="1.5"
+                    stroke-linejoin="round"
+                    fill="#000"
+                  />
+                </svg>
+              </div>
+              <img
+                class="w-full object-contain"
+                src="https://raw.githubusercontent.com/CodeWithHarry/Sigma-Web-Dev-Course/main/Video%2084%20-%20Project%202%20-%20Spotify%20Clone/songs/cs/cover.jpg"
+                alt=""
+              />
+              <h2>Happy Hits!</h2>
+              <p>Hits to boost your mood and fill you with happiness!</p>
+            </div>
+          </div>
+          <div class="playbar absolute bottom-0 w-full bg-green-600 p-4">
+            <div class="songinfo"></div>
+            <div class="songbutton flex justify-center items-center gap-4">
+              <img src="/prev.svg" alt="" />
+              <img src="/play.svg" alt="" />
+              <img src="/next.svg" alt="" />
+            </div>
+            <div class="songtime"></div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <script type="module" src="/main.js"></script>
+  </body>
+</html>
+<!-- flex justify-center items-center -->
